@@ -14,7 +14,7 @@ public class OperationsDb {
 
     public void openConnection() throws Exception, SQLException{
         
-        String url = "jdbc:mysql://localhost/db_alumnos";
+        String url = "jdbc:mysql://mariadb/db_alumnos";
         nexion = DriverManager.getConnection(url, "manager", "abc123.");
         
     }//openConnection
