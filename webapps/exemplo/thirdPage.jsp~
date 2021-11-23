@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<h2>Show information</h2>
+
+		<p>
+			Name: <%=request.getParameter("name")%>
+		</p>
+		
+	</body>
+</html>

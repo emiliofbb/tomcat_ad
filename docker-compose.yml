@@ -1,0 +1,23 @@
+version: '3.4'
+services:
+ mariadb:
+  image: mariadb:10.2
+  environment:
+   MYSQL_ROOT_PASSWORD: abc123.
+   MYSQL_DATABASE: db_alumnos
+   MYSQL_USER: manager
+   MYSQL_PASSWORD: abc123.
+  volumes:
+   - ./db_volume:/var/lib/mysql
+ tomcat:
+  image: tomcat
+  volumes:
+   - ./webapps:/usr/local/tomcat/webapps
+  ports:
+   - "8080:8080"
+  environment:
+   MYSQL_HOST: mysql
+   MYSQL_USER: manager
+   MYSQL_PASSWORK: abc123.
+   MYSQL_DB: db_alumnos
+   CLASSPATH: /usr/local/tomcat/webapps/mysql-connector-java-8.0.27.jar
