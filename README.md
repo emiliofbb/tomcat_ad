@@ -28,6 +28,8 @@ correo, na clase ou por what o que mellor vos veña.
 ### Baixar containers
 Recomendo usar: <br/>
 docker-compose stop, ainda que tamén se pode usar docker-compose down. Este último non debería afectar en nada posto que todo está configurado correctamente.
+<br/>
+<b>Esto é útil cando teñades problemas a hora de cargar os cambios e necesitedes reiniciar o servidor.</b>
 ## Explicación Conexión con BBDD
 Editar onde se xera a conexión no java e en vez de localhost:3306 poñer mariadb.
 Ademais xa hai unha BBDD de orders que podedes acceder con adminOrder e contrasinal abc123.
