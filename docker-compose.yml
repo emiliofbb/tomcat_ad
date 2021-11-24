@@ -10,7 +10,7 @@ services:
   volumes:
    - ./db_volume:/var/lib/mysql
  tomcat:
-  image: tomcat
+  build: ./build
   volumes:
    - ./webapps:/usr/local/tomcat/webapps
   ports:
